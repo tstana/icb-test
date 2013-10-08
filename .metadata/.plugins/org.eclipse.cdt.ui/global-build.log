@@ -1,0 +1,29 @@
+21:01:54 **** Clean-only build of configuration Debug for project CMSISv2p00_LPC177x_8x ****
+make clean 
+rm -rf  ./src/core_cm3.o ./src/system_LPC177x_8x.o  ./src/core_cm3.d ./src/system_LPC177x_8x.d  libCMSISv2p00_LPC177x_8x.a
+ 
+21:01:55 **** Build of configuration Debug for project CMSISv2p00_LPC177x_8x ****
+make all 
+Building file: ../src/core_cm3.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -I../inc -Os -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -MMD -MP -MF"src/core_cm3.d" -MT"src/core_cm3.d" -o "src/core_cm3.o" "../src/core_cm3.c"
+Finished building: ../src/core_cm3.c
+ 
+Building file: ../src/system_LPC177x_8x.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -I../inc -Os -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -MMD -MP -MF"src/system_LPC177x_8x.d" -MT"src/system_LPC177x_8x.d" -o "src/system_LPC177x_8x.o" "../src/system_LPC177x_8x.c"
+Finished building: ../src/system_LPC177x_8x.c
+ 
+Building target: libCMSISv2p00_LPC177x_8x.a
+Invoking: MCU Archiver
+arm-none-eabi-ar -r  "libCMSISv2p00_LPC177x_8x.a"  ./src/core_cm3.o ./src/system_LPC177x_8x.o   
+c:\nxp\LPCXpresso_6.0.2_151\lpcxpresso\tools\bin\arm-none-eabi-ar.exe: creating libCMSISv2p00_LPC177x_8x.a
+Finished building target: libCMSISv2p00_LPC177x_8x.a
+ 
+make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size libCMSISv2p00_LPC177x_8x.a ; # arm-none-eabi-objdump -h -S libCMSISv2p00_LPC177x_8x.a >libCMSISv2p00_LPC177x_8x.lss
+   text	   data	    bss	    dec	    hex	filename
+      0	      0	      0	      0	      0	core_cm3.o (ex libCMSISv2p00_LPC177x_8x.a)
+    516	     16	      0	    532	    214	system_LPC177x_8x.o (ex libCMSISv2p00_LPC177x_8x.a)
+ 
