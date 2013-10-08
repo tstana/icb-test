@@ -2,14 +2,14 @@
  * GENERATED FILE - DO NOT EDIT
  * (c) Code Red Technologies Ltd, 2008-2013
  * (c) NXP Semiconductors 2013-2013
- * Generated linker script file for LPC1788
+ * Generated linker script file for LPC1768
  * Created from generic_c.ld (LPCXpresso v6.0 (2 [Build 151] [2013-09-18] ))
- * By LPCXpresso v6.0.2 [Build 151] [2013-09-18]  on Wed Oct 09 01:06:57 CEST 2013
+ * By LPCXpresso v6.0.2 [Build 151] [2013-09-18]  on Wed Oct 09 01:06:36 CEST 2013
  */
 
 
-INCLUDE "rgb_Debug_lib.ld"
-INCLUDE "rgb_Debug_mem.ld"
+INCLUDE "uart_Debug_lib.ld"
+INCLUDE "uart_Debug_mem.ld"
 
 ENTRY(ResetISR)
 
@@ -75,14 +75,14 @@ SECTIONS
     _etext = .;
         
     
-    /* DATA section for RamPeriph32 */
+    /* DATA section for RamAHB32 */
     .data_RAM2 : ALIGN(4)
     {
        FILL(0xff)
     	*(.data.$RAM2*)
-    	*(.data.$RamPeriph32*)
+    	*(.data.$RamAHB32*)
        . = ALIGN(4) ;
-    } > RamPeriph32 AT>MFlash512
+    } > RamAHB32 AT>MFlash512
     
     /* MAIN DATA SECTION */
     
@@ -92,10 +92,10 @@ SECTIONS
         KEEP(*(.bss.$RESERVED*))
         . = ALIGN(4) ;
         _end_uninit_RESERVED = .;
-    } > RamLoc64
+    } > RamLoc32
 
 	
-	/* Main DATA section (RamLoc64) */
+	/* Main DATA section (RamLoc32) */
 	.data : ALIGN(4)
 	{
 	   FILL(0xff)
@@ -104,15 +104,15 @@ SECTIONS
 	   *(.data*)
 	   . = ALIGN(4) ;
 	   _edata = . ;
-	} > RamLoc64 AT>MFlash512
+	} > RamLoc32 AT>MFlash512
 
-    /* BSS section for RamPeriph32 */
+    /* BSS section for RamAHB32 */
     .bss_RAM2 : ALIGN(4)
     {
     	*(.bss.$RAM2*)
-    	*(.bss.$RamPeriph32*)
+    	*(.bss.$RamAHB32*)
        . = ALIGN(4) ;
-    } > RamPeriph32
+    } > RamAHB32
 
     /* MAIN BSS SECTION */
     .bss : ALIGN(4)
@@ -123,15 +123,15 @@ SECTIONS
         . = ALIGN(4) ;
         _ebss = .;
         PROVIDE(end = .);
-    } > RamLoc64
+    } > RamLoc32
         
-    /* NOINIT section for RamPeriph32 */
+    /* NOINIT section for RamAHB32 */
     .noinit_RAM2 (NOLOAD) : ALIGN(4)
     {
     	*(.noinit.$RAM2*)
-    	*(.noinit.$RamPeriph32*)
+    	*(.noinit.$RamAHB32*)
        . = ALIGN(4) ;
-    } > RamPeriph32 
+    } > RamAHB32 
     
     /* DEFAULT NOINIT SECTION */
     .noinit (NOLOAD): ALIGN(4)
@@ -140,8 +140,8 @@ SECTIONS
         *(.noinit*) 
          . = ALIGN(4) ;
         _end_noinit = .;
-    } > RamLoc64
+    } > RamLoc32
     
     PROVIDE(_pvHeapStart = .);
-    PROVIDE(_vStackTop = __top_RamLoc64 - 0);
+    PROVIDE(_vStackTop = __top_RamLoc32 - 0);
 }
