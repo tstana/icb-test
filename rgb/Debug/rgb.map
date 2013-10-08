@@ -1,0 +1,311 @@
+Archive member included because of file (symbol)
+
+/home/thedi/Projects/lpcxpresso/icb-test/CMSISv2p00_LPC177x_8x/Debug/libCMSISv2p00_LPC177x_8x.a(system_LPC177x_8x.o)
+                              ./src/main.o (SystemCoreClockUpdate)
+/opt/lpcxpresso_6.0.2_151/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/../../../../arm-none-eabi/lib/armv7-m/libcr_c.a(__weak__main.o)
+                              ./src/cr_startup_lpc177x_8x.o (__main)
+
+Discarded input sections
+
+ .text          0x00000000        0x0 ./src/cr_startup_lpc177x_8x.o
+ .data          0x00000000        0x0 ./src/cr_startup_lpc177x_8x.o
+ .bss           0x00000000        0x0 ./src/cr_startup_lpc177x_8x.o
+ .text          0x00000000        0x0 ./src/crp.o
+ .data          0x00000000        0x0 ./src/crp.o
+ .bss           0x00000000        0x0 ./src/crp.o
+ .crp           0x00000000        0x4 ./src/crp.o
+ .text          0x00000000        0x0 ./src/main.o
+ .data          0x00000000        0x0 ./src/main.o
+ .bss           0x00000000        0x0 ./src/main.o
+ .text          0x00000000        0x0 /home/thedi/Projects/lpcxpresso/icb-test/CMSISv2p00_LPC177x_8x/Debug/libCMSISv2p00_LPC177x_8x.a(system_LPC177x_8x.o)
+ .data          0x00000000        0x0 /home/thedi/Projects/lpcxpresso/icb-test/CMSISv2p00_LPC177x_8x/Debug/libCMSISv2p00_LPC177x_8x.a(system_LPC177x_8x.o)
+ .bss           0x00000000        0x0 /home/thedi/Projects/lpcxpresso/icb-test/CMSISv2p00_LPC177x_8x/Debug/libCMSISv2p00_LPC177x_8x.a(system_LPC177x_8x.o)
+ .text          0x00000000        0x0 /opt/lpcxpresso_6.0.2_151/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/../../../../arm-none-eabi/lib/armv7-m/libcr_c.a(__weak__main.o)
+ .data          0x00000000        0x0 /opt/lpcxpresso_6.0.2_151/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/../../../../arm-none-eabi/lib/armv7-m/libcr_c.a(__weak__main.o)
+ .bss           0x00000000        0x0 /opt/lpcxpresso_6.0.2_151/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/../../../../arm-none-eabi/lib/armv7-m/libcr_c.a(__weak__main.o)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+MFlash512        0x00000000         0x00080000         xr
+RamLoc64         0x10000000         0x00010000         xrw
+RamPeriph32      0x20000000         0x00008000         xrw
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+LOAD ./src/cr_startup_lpc177x_8x.o
+LOAD ./src/crp.o
+LOAD ./src/main.o
+LOAD /home/thedi/Projects/lpcxpresso/icb-test/CMSISv2p00_LPC177x_8x/Debug/libCMSISv2p00_LPC177x_8x.a
+START GROUP
+LOAD /opt/lpcxpresso_6.0.2_151/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/../../../../arm-none-eabi/lib/armv7-m/libcr_c.a
+LOAD /opt/lpcxpresso_6.0.2_151/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/armv7-m/libcr_eabihelpers.a
+END GROUP
+                0x00080000                __top_MFlash512 = 0x80000
+                0x10010000                __top_RamLoc64 = 0x10010000
+                0x20008000                __top_RamPeriph32 = 0x20008000
+
+.text           0x00000000      0x49c
+ FILL mask 0xff
+                0x00000000                __vectors_start__ = ABSOLUTE (.)
+ *(.isr_vector)
+ .isr_vector    0x00000000       0xe4 ./src/cr_startup_lpc177x_8x.o
+                0x00000000                g_pfnVectors
+                0x000000e4                . = ALIGN (0x4)
+                0x000000e4                __section_table_start = .
+                0x000000e4                __data_section_table = .
+                0x000000e4        0x4 LONG 0x49c LOADADDR (.data)
+                0x000000e8        0x4 LONG 0x10000000 ADDR (.data)
+                0x000000ec        0x4 LONG 0x14 SIZEOF (.data)
+                0x000000f0        0x4 LONG 0x49c LOADADDR (.data_RAM2)
+                0x000000f4        0x4 LONG 0x20000000 ADDR (.data_RAM2)
+                0x000000f8        0x4 LONG 0x0 SIZEOF (.data_RAM2)
+                0x000000fc                __data_section_table_end = .
+                0x000000fc                __bss_section_table = .
+                0x000000fc        0x4 LONG 0x10000014 ADDR (.bss)
+                0x00000100        0x4 LONG 0x0 SIZEOF (.bss)
+                0x00000104        0x4 LONG 0x20000000 ADDR (.bss_RAM2)
+                0x00000108        0x4 LONG 0x0 SIZEOF (.bss_RAM2)
+                0x0000010c                __bss_section_table_end = .
+                0x0000010c                __section_table_end = .
+ *(.after_vectors*)
+ .after_vectors
+                0x0000010c       0x78 ./src/cr_startup_lpc177x_8x.o
+                0x0000010c                NMI_Handler
+                0x0000010e                HardFault_Handler
+                0x00000110                MemManage_Handler
+                0x00000112                BusFault_Handler
+                0x00000114                UsageFault_Handler
+                0x00000116                SVC_Handler
+                0x00000118                DebugMon_Handler
+                0x0000011a                PendSV_Handler
+                0x0000011c                SysTick_Handler
+                0x0000011e                GPIO_IRQHandler
+                0x0000011e                TIMER2_IRQHandler
+                0x0000011e                RIT_IRQHandler
+                0x0000011e                I2C0_IRQHandler
+                0x0000011e                USBActivity_IRQHandler
+                0x0000011e                PWM1_IRQHandler
+                0x0000011e                I2C1_IRQHandler
+                0x0000011e                EINT2_IRQHandler
+                0x0000011e                UART1_IRQHandler
+                0x0000011e                EINT3_IRQHandler
+                0x0000011e                CANActivity_IRQHandler
+                0x0000011e                TIMER3_IRQHandler
+                0x0000011e                UART0_IRQHandler
+                0x0000011e                IntDefaultHandler
+                0x0000011e                PLL0_IRQHandler
+                0x0000011e                CAN_IRQHandler
+                0x0000011e                PLL1_IRQHandler
+                0x0000011e                SSP0_IRQHandler
+                0x0000011e                I2S_IRQHandler
+                0x0000011e                I2C2_IRQHandler
+                0x0000011e                RTC_IRQHandler
+                0x0000011e                SPI_IRQHandler
+                0x0000011e                LCD_IRQHandler
+                0x0000011e                EINT1_IRQHandler
+                0x0000011e                TIMER1_IRQHandler
+                0x0000011e                UART2_IRQHandler
+                0x0000011e                UART4_IRQHandler
+                0x0000011e                ADC_IRQHandler
+                0x0000011e                MCI_IRQHandler
+                0x0000011e                SSP1_IRQHandler
+                0x0000011e                USB_IRQHandler
+                0x0000011e                BOD_IRQHandler
+                0x0000011e                WDT_IRQHandler
+                0x0000011e                QEI_IRQHandler
+                0x0000011e                EINT0_IRQHandler
+                0x0000011e                PWM0_IRQHandler
+                0x0000011e                SSP2_IRQHandler
+                0x0000011e                EEPROM_IRQHandler
+                0x0000011e                DMA_IRQHandler
+                0x0000011e                UART3_IRQHandler
+                0x0000011e                MCPWM_IRQHandler
+                0x0000011e                ENET_IRQHandler
+                0x00000120                data_init
+                0x00000132                bss_init
+                0x00000142                ResetISR
+ *(.text*)
+ .text.NVIC_EnableIRQ
+                0x00000184       0x38 ./src/main.o
+ .text.TIMER0_IRQHandler
+                0x000001bc       0x78 ./src/main.o
+                0x000001bc                TIMER0_IRQHandler
+ .text.main     0x00000234       0x60 ./src/main.o
+                0x00000234                main
+ .text.SystemCoreClockUpdate
+                0x00000294      0x164 /home/thedi/Projects/lpcxpresso/icb-test/CMSISv2p00_LPC177x_8x/Debug/libCMSISv2p00_LPC177x_8x.a(system_LPC177x_8x.o)
+                0x00000294                SystemCoreClockUpdate
+ .text.SystemInit
+                0x000003f8       0xa0 /home/thedi/Projects/lpcxpresso/icb-test/CMSISv2p00_LPC177x_8x/Debug/libCMSISv2p00_LPC177x_8x.a(system_LPC177x_8x.o)
+                0x000003f8                SystemInit
+ .text.__weak_main
+                0x00000498        0x4 /opt/lpcxpresso_6.0.2_151/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/../../../../arm-none-eabi/lib/armv7-m/libcr_c.a(__weak__main.o)
+                0x00000498                __main
+                0x00000498                __weak_main
+ *(.rodata .rodata.*)
+                0x0000049c                . = ALIGN (0x4)
+
+.glue_7         0x0000049c        0x0
+ .glue_7        0x00000000        0x0 linker stubs
+
+.glue_7t        0x0000049c        0x0
+ .glue_7t       0x00000000        0x0 linker stubs
+
+.vfp11_veneer   0x0000049c        0x0
+ .vfp11_veneer  0x00000000        0x0 linker stubs
+
+.v4_bx          0x0000049c        0x0
+ .v4_bx         0x00000000        0x0 linker stubs
+
+.ARM.extab
+ *(.ARM.extab* .gnu.linkonce.armextab.*)
+                0x0000049c                __exidx_start = .
+
+.ARM.exidx
+ *(.ARM.exidx* .gnu.linkonce.armexidx.*)
+                0x0000049c                __exidx_end = .
+                0x0000049c                _etext = .
+
+.data_RAM2      0x20000000        0x0 load address 0x0000049c
+ FILL mask 0xff
+ *(.data.$RAM2*)
+ *(.data.$RamPeriph32*)
+                0x20000000                . = ALIGN (0x4)
+
+.uninit_RESERVED
+                0x10000000        0x0
+ *(.bss.$RESERVED*)
+                0x10000000                . = ALIGN (0x4)
+                0x10000000                _end_uninit_RESERVED = .
+
+.data           0x10000000       0x14 load address 0x0000049c
+ FILL mask 0xff
+                0x10000000                _data = .
+ *(vtable)
+ *(.data*)
+ .data.led      0x10000000        0x4 ./src/main.o
+ .data.USBClock
+                0x10000004        0x4 /home/thedi/Projects/lpcxpresso/icb-test/CMSISv2p00_LPC177x_8x/Debug/libCMSISv2p00_LPC177x_8x.a(system_LPC177x_8x.o)
+                0x10000004                USBClock
+ .data.EMCClock
+                0x10000008        0x4 /home/thedi/Projects/lpcxpresso/icb-test/CMSISv2p00_LPC177x_8x/Debug/libCMSISv2p00_LPC177x_8x.a(system_LPC177x_8x.o)
+                0x10000008                EMCClock
+ .data.PeripheralClock
+                0x1000000c        0x4 /home/thedi/Projects/lpcxpresso/icb-test/CMSISv2p00_LPC177x_8x/Debug/libCMSISv2p00_LPC177x_8x.a(system_LPC177x_8x.o)
+                0x1000000c                PeripheralClock
+ .data.SystemCoreClock
+                0x10000010        0x4 /home/thedi/Projects/lpcxpresso/icb-test/CMSISv2p00_LPC177x_8x/Debug/libCMSISv2p00_LPC177x_8x.a(system_LPC177x_8x.o)
+                0x10000010                SystemCoreClock
+                0x10000014                . = ALIGN (0x4)
+                0x10000014                _edata = .
+
+.bss_RAM2       0x20000000        0x0
+ *(.bss.$RAM2*)
+ *(.bss.$RamPeriph32*)
+                0x20000000                . = ALIGN (0x4)
+
+.bss            0x10000014        0x0
+                0x10000014                _bss = .
+ *(.bss*)
+ *(COMMON)
+                0x10000014                . = ALIGN (0x4)
+                0x10000014                _ebss = .
+                0x10000014                PROVIDE (end, .)
+
+.noinit_RAM2    0x20000000        0x0
+ *(.noinit.$RAM2*)
+ *(.noinit.$RamPeriph32*)
+                0x20000000                . = ALIGN (0x4)
+
+.noinit         0x10000014        0x0
+                0x10000014                _noinit = .
+ *(.noinit*)
+                0x10000014                . = ALIGN (0x4)
+                0x10000014                _end_noinit = .
+                0x10000014                PROVIDE (_pvHeapStart, .)
+                0x10010000                PROVIDE (_vStackTop, (__top_RamLoc64 - 0x0))
+OUTPUT(rgb.axf elf32-littlearm)
+
+.debug_info     0x00000000      0xed6
+ .debug_info    0x00000000      0x30d ./src/cr_startup_lpc177x_8x.o
+ .debug_info    0x0000030d       0x48 ./src/crp.o
+ .debug_info    0x00000355      0x57a ./src/main.o
+ .debug_info    0x000008cf      0x607 /home/thedi/Projects/lpcxpresso/icb-test/CMSISv2p00_LPC177x_8x/Debug/libCMSISv2p00_LPC177x_8x.a(system_LPC177x_8x.o)
+
+.debug_abbrev   0x00000000      0x404
+ .debug_abbrev  0x00000000      0x150 ./src/cr_startup_lpc177x_8x.o
+ .debug_abbrev  0x00000150       0x39 ./src/crp.o
+ .debug_abbrev  0x00000189      0x160 ./src/main.o
+ .debug_abbrev  0x000002e9      0x11b /home/thedi/Projects/lpcxpresso/icb-test/CMSISv2p00_LPC177x_8x/Debug/libCMSISv2p00_LPC177x_8x.a(system_LPC177x_8x.o)
+
+.debug_loc      0x00000000      0x1b2
+ .debug_loc     0x00000000      0x102 ./src/cr_startup_lpc177x_8x.o
+ .debug_loc     0x00000102       0x90 ./src/main.o
+ .debug_loc     0x00000192       0x20 /home/thedi/Projects/lpcxpresso/icb-test/CMSISv2p00_LPC177x_8x/Debug/libCMSISv2p00_LPC177x_8x.a(system_LPC177x_8x.o)
+
+.debug_aranges  0x00000000       0xd8
+ .debug_aranges
+                0x00000000       0x80 ./src/cr_startup_lpc177x_8x.o
+ .debug_aranges
+                0x00000080       0x30 ./src/main.o
+ .debug_aranges
+                0x000000b0       0x28 /home/thedi/Projects/lpcxpresso/icb-test/CMSISv2p00_LPC177x_8x/Debug/libCMSISv2p00_LPC177x_8x.a(system_LPC177x_8x.o)
+
+.debug_ranges   0x00000000       0xa8
+ .debug_ranges  0x00000000       0x70 ./src/cr_startup_lpc177x_8x.o
+ .debug_ranges  0x00000070       0x20 ./src/main.o
+ .debug_ranges  0x00000090       0x18 /home/thedi/Projects/lpcxpresso/icb-test/CMSISv2p00_LPC177x_8x/Debug/libCMSISv2p00_LPC177x_8x.a(system_LPC177x_8x.o)
+
+.debug_line     0x00000000      0xc05
+ .debug_line    0x00000000      0x3e3 ./src/cr_startup_lpc177x_8x.o
+ .debug_line    0x000003e3       0xaa ./src/crp.o
+ .debug_line    0x0000048d      0x3c2 ./src/main.o
+ .debug_line    0x0000084f      0x3b6 /home/thedi/Projects/lpcxpresso/icb-test/CMSISv2p00_LPC177x_8x/Debug/libCMSISv2p00_LPC177x_8x.a(system_LPC177x_8x.o)
+
+.debug_macinfo  0x00000000    0x1bb31
+ .debug_macinfo
+                0x00000000     0x85e3 ./src/cr_startup_lpc177x_8x.o
+ .debug_macinfo
+                0x000085e3     0x23ad ./src/crp.o
+ .debug_macinfo
+                0x0000a990     0x8918 ./src/main.o
+ .debug_macinfo
+                0x000132a8     0x8889 /home/thedi/Projects/lpcxpresso/icb-test/CMSISv2p00_LPC177x_8x/Debug/libCMSISv2p00_LPC177x_8x.a(system_LPC177x_8x.o)
+
+.debug_str      0x00000000      0x7d1
+ .debug_str     0x00000000      0x25a ./src/cr_startup_lpc177x_8x.o
+                                0x28a (size before relaxing)
+ .debug_str     0x0000025a       0x16 ./src/crp.o
+                                 0x9f (size before relaxing)
+ .debug_str     0x00000270      0x32c ./src/main.o
+                                0x43b (size before relaxing)
+ .debug_str     0x0000059c      0x235 /home/thedi/Projects/lpcxpresso/icb-test/CMSISv2p00_LPC177x_8x/Debug/libCMSISv2p00_LPC177x_8x.a(system_LPC177x_8x.o)
+                                0x371 (size before relaxing)
+
+.comment        0x00000000       0x70
+ .comment       0x00000000       0x70 ./src/cr_startup_lpc177x_8x.o
+                                 0x71 (size before relaxing)
+ .comment       0x00000000       0x71 ./src/crp.o
+ .comment       0x00000000       0x71 ./src/main.o
+ .comment       0x00000000       0x71 /home/thedi/Projects/lpcxpresso/icb-test/CMSISv2p00_LPC177x_8x/Debug/libCMSISv2p00_LPC177x_8x.a(system_LPC177x_8x.o)
+ .comment       0x00000000       0x71 /opt/lpcxpresso_6.0.2_151/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/../../../../arm-none-eabi/lib/armv7-m/libcr_c.a(__weak__main.o)
+
+.ARM.attributes
+                0x00000000       0x33
+ .ARM.attributes
+                0x00000000       0x33 ./src/cr_startup_lpc177x_8x.o
+ .ARM.attributes
+                0x00000033       0x33 ./src/crp.o
+ .ARM.attributes
+                0x00000066       0x33 ./src/main.o
+ .ARM.attributes
+                0x00000099       0x33 /home/thedi/Projects/lpcxpresso/icb-test/CMSISv2p00_LPC177x_8x/Debug/libCMSISv2p00_LPC177x_8x.a(system_LPC177x_8x.o)
+ .ARM.attributes
+                0x000000cc       0x33 /opt/lpcxpresso_6.0.2_151/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/../../../../arm-none-eabi/lib/armv7-m/libcr_c.a(__weak__main.o)
+
+.debug_frame    0x00000000      0x18c
+ .debug_frame   0x00000000       0xf4 ./src/cr_startup_lpc177x_8x.o
+ .debug_frame   0x000000f4       0x60 ./src/main.o
+ .debug_frame   0x00000154       0x38 /home/thedi/Projects/lpcxpresso/icb-test/CMSISv2p00_LPC177x_8x/Debug/libCMSISv2p00_LPC177x_8x.a(system_LPC177x_8x.o)

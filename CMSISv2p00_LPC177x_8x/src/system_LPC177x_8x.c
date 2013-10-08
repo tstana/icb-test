@@ -197,7 +197,7 @@
 #define USBCLKSEL_Val         (0x00000001|(0x02<<8))
 #define EMCCLKSEL_Val         0x00000001
 #define PCLKSEL_Val           0x00000002
-#define PCONP_Val             0x042887DE
+#define PCONP_Val             0x0408829E  // 0x042887DE
 #define CLKOUTCFG_Val         0x00000100
 
 
@@ -272,8 +272,8 @@
 /*----------------------------------------------------------------------------
   DEFINES
  *----------------------------------------------------------------------------*/
-/* pll_out_clk = F_cco / (2 × P)
-   F_cco = pll_in_clk × M × 2 × P */
+/* pll_out_clk = F_cco / (2 ï¿½ P)
+   F_cco = pll_in_clk ï¿½ M ï¿½ 2 ï¿½ P */
 #define __M                   ((PLL0CFG_Val & 0x1F) + 1)
 #define __PLL0_CLK(__F_IN)    (__F_IN * __M)
 #define __CCLK_DIV            (CCLKSEL_Val & 0x1F)
