@@ -29,7 +29,7 @@ all: rgb.axf
 rgb.axf: $(OBJS) $(USER_OBJS)
 	@echo 'Building target: $@'
 	@echo 'Invoking: MCU Linker'
-	arm-none-eabi-gcc -nostdlib -L"/home/thedi/Projects/lpcxpresso/icb-test/CMSISv2p00_LPC177x_8x/Debug" -Xlinker -Map="rgb.map" -Xlinker --gc-sections -mcpu=cortex-m3 -mthumb -T "rgb_Debug.ld" -o "rgb.axf" $(OBJS) $(USER_OBJS) $(LIBS)
+	arm-none-eabi-gcc -nostdlib -L../../CMSISv2p00_LPC177x_8x/Debug -Xlinker -Map="rgb.map" -Xlinker --gc-sections -mcpu=cortex-m3 -mthumb -T "rgb_Debug.ld" -o "rgb.axf" $(OBJS) $(USER_OBJS) $(LIBS)
 	@echo 'Finished building target: $@'
 	@echo ' '
 	$(MAKE) --no-print-directory post-build

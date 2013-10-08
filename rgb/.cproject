@@ -64,7 +64,7 @@
 									<listOptionValue builtIn="false" value="CMSISv2p00_LPC177x_8x"/>
 								</option>
 								<option id="gnu.c.link.option.paths.618636922" name="Library search path (-L)" superClass="gnu.c.link.option.paths" valueType="libPaths">
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/CMSISv2p00_LPC177x_8x/Debug}&quot;"/>
+									<listOptionValue builtIn="false" value="../../CMSISv2p00_LPC177x_8x/Debug"/>
 								</option>
 								<option id="com.crt.advproject.link.crpenable.1831487394" name="Enable Code Read Protect" superClass="com.crt.advproject.link.crpenable"/>
 								<option id="com.crt.advproject.link.gcc.multicore.slave.2063893798" name="Multicore slave" superClass="com.crt.advproject.link.gcc.multicore.slave"/>

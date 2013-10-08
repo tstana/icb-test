@@ -1,6 +1,6 @@
 Archive member included because of file (symbol)
 
-/home/thedi/Projects/lpcxpresso/icb-test/CMSISv2p00_LPC177x_8x/Debug/libCMSISv2p00_LPC177x_8x.a(system_LPC177x_8x.o)
+../../CMSISv2p00_LPC177x_8x/Debug/libCMSISv2p00_LPC177x_8x.a(system_LPC177x_8x.o)
                               ./src/main.o (SystemCoreClockUpdate)
 /opt/lpcxpresso_6.0.2_151/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/../../../../arm-none-eabi/lib/armv7-m/libcr_c.a(__weak__main.o)
                               ./src/cr_startup_lpc177x_8x.o (__main)
@@ -17,9 +17,9 @@ Discarded input sections
  .text          0x00000000        0x0 ./src/main.o
  .data          0x00000000        0x0 ./src/main.o
  .bss           0x00000000        0x0 ./src/main.o
- .text          0x00000000        0x0 /home/thedi/Projects/lpcxpresso/icb-test/CMSISv2p00_LPC177x_8x/Debug/libCMSISv2p00_LPC177x_8x.a(system_LPC177x_8x.o)
- .data          0x00000000        0x0 /home/thedi/Projects/lpcxpresso/icb-test/CMSISv2p00_LPC177x_8x/Debug/libCMSISv2p00_LPC177x_8x.a(system_LPC177x_8x.o)
- .bss           0x00000000        0x0 /home/thedi/Projects/lpcxpresso/icb-test/CMSISv2p00_LPC177x_8x/Debug/libCMSISv2p00_LPC177x_8x.a(system_LPC177x_8x.o)
+ .text          0x00000000        0x0 ../../CMSISv2p00_LPC177x_8x/Debug/libCMSISv2p00_LPC177x_8x.a(system_LPC177x_8x.o)
+ .data          0x00000000        0x0 ../../CMSISv2p00_LPC177x_8x/Debug/libCMSISv2p00_LPC177x_8x.a(system_LPC177x_8x.o)
+ .bss           0x00000000        0x0 ../../CMSISv2p00_LPC177x_8x/Debug/libCMSISv2p00_LPC177x_8x.a(system_LPC177x_8x.o)
  .text          0x00000000        0x0 /opt/lpcxpresso_6.0.2_151/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/../../../../arm-none-eabi/lib/armv7-m/libcr_c.a(__weak__main.o)
  .data          0x00000000        0x0 /opt/lpcxpresso_6.0.2_151/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/../../../../arm-none-eabi/lib/armv7-m/libcr_c.a(__weak__main.o)
  .bss           0x00000000        0x0 /opt/lpcxpresso_6.0.2_151/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/../../../../arm-none-eabi/lib/armv7-m/libcr_c.a(__weak__main.o)
@@ -37,7 +37,7 @@ Linker script and memory map
 LOAD ./src/cr_startup_lpc177x_8x.o
 LOAD ./src/crp.o
 LOAD ./src/main.o
-LOAD /home/thedi/Projects/lpcxpresso/icb-test/CMSISv2p00_LPC177x_8x/Debug/libCMSISv2p00_LPC177x_8x.a
+LOAD ../../CMSISv2p00_LPC177x_8x/Debug/libCMSISv2p00_LPC177x_8x.a
 START GROUP
 LOAD /opt/lpcxpresso_6.0.2_151/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/../../../../arm-none-eabi/lib/armv7-m/libcr_c.a
 LOAD /opt/lpcxpresso_6.0.2_151/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/armv7-m/libcr_eabihelpers.a
@@ -135,10 +135,10 @@ END GROUP
  .text.main     0x00000234       0x60 ./src/main.o
                 0x00000234                main
  .text.SystemCoreClockUpdate
-                0x00000294      0x164 /home/thedi/Projects/lpcxpresso/icb-test/CMSISv2p00_LPC177x_8x/Debug/libCMSISv2p00_LPC177x_8x.a(system_LPC177x_8x.o)
+                0x00000294      0x164 ../../CMSISv2p00_LPC177x_8x/Debug/libCMSISv2p00_LPC177x_8x.a(system_LPC177x_8x.o)
                 0x00000294                SystemCoreClockUpdate
  .text.SystemInit
-                0x000003f8       0xa0 /home/thedi/Projects/lpcxpresso/icb-test/CMSISv2p00_LPC177x_8x/Debug/libCMSISv2p00_LPC177x_8x.a(system_LPC177x_8x.o)
+                0x000003f8       0xa0 ../../CMSISv2p00_LPC177x_8x/Debug/libCMSISv2p00_LPC177x_8x.a(system_LPC177x_8x.o)
                 0x000003f8                SystemInit
  .text.__weak_main
                 0x00000498        0x4 /opt/lpcxpresso_6.0.2_151/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/../../../../arm-none-eabi/lib/armv7-m/libcr_c.a(__weak__main.o)
@@ -187,16 +187,16 @@ END GROUP
  *(.data*)
  .data.led      0x10000000        0x4 ./src/main.o
  .data.USBClock
-                0x10000004        0x4 /home/thedi/Projects/lpcxpresso/icb-test/CMSISv2p00_LPC177x_8x/Debug/libCMSISv2p00_LPC177x_8x.a(system_LPC177x_8x.o)
+                0x10000004        0x4 ../../CMSISv2p00_LPC177x_8x/Debug/libCMSISv2p00_LPC177x_8x.a(system_LPC177x_8x.o)
                 0x10000004                USBClock
  .data.EMCClock
-                0x10000008        0x4 /home/thedi/Projects/lpcxpresso/icb-test/CMSISv2p00_LPC177x_8x/Debug/libCMSISv2p00_LPC177x_8x.a(system_LPC177x_8x.o)
+                0x10000008        0x4 ../../CMSISv2p00_LPC177x_8x/Debug/libCMSISv2p00_LPC177x_8x.a(system_LPC177x_8x.o)
                 0x10000008                EMCClock
  .data.PeripheralClock
-                0x1000000c        0x4 /home/thedi/Projects/lpcxpresso/icb-test/CMSISv2p00_LPC177x_8x/Debug/libCMSISv2p00_LPC177x_8x.a(system_LPC177x_8x.o)
+                0x1000000c        0x4 ../../CMSISv2p00_LPC177x_8x/Debug/libCMSISv2p00_LPC177x_8x.a(system_LPC177x_8x.o)
                 0x1000000c                PeripheralClock
  .data.SystemCoreClock
-                0x10000010        0x4 /home/thedi/Projects/lpcxpresso/icb-test/CMSISv2p00_LPC177x_8x/Debug/libCMSISv2p00_LPC177x_8x.a(system_LPC177x_8x.o)
+                0x10000010        0x4 ../../CMSISv2p00_LPC177x_8x/Debug/libCMSISv2p00_LPC177x_8x.a(system_LPC177x_8x.o)
                 0x10000010                SystemCoreClock
                 0x10000014                . = ALIGN (0x4)
                 0x10000014                _edata = .
@@ -232,18 +232,18 @@ OUTPUT(rgb.axf elf32-littlearm)
  .debug_info    0x00000000      0x30d ./src/cr_startup_lpc177x_8x.o
  .debug_info    0x0000030d       0x48 ./src/crp.o
  .debug_info    0x00000355      0x57a ./src/main.o
- .debug_info    0x000008cf      0x607 /home/thedi/Projects/lpcxpresso/icb-test/CMSISv2p00_LPC177x_8x/Debug/libCMSISv2p00_LPC177x_8x.a(system_LPC177x_8x.o)
+ .debug_info    0x000008cf      0x607 ../../CMSISv2p00_LPC177x_8x/Debug/libCMSISv2p00_LPC177x_8x.a(system_LPC177x_8x.o)
 
 .debug_abbrev   0x00000000      0x404
  .debug_abbrev  0x00000000      0x150 ./src/cr_startup_lpc177x_8x.o
  .debug_abbrev  0x00000150       0x39 ./src/crp.o
  .debug_abbrev  0x00000189      0x160 ./src/main.o
- .debug_abbrev  0x000002e9      0x11b /home/thedi/Projects/lpcxpresso/icb-test/CMSISv2p00_LPC177x_8x/Debug/libCMSISv2p00_LPC177x_8x.a(system_LPC177x_8x.o)
+ .debug_abbrev  0x000002e9      0x11b ../../CMSISv2p00_LPC177x_8x/Debug/libCMSISv2p00_LPC177x_8x.a(system_LPC177x_8x.o)
 
 .debug_loc      0x00000000      0x1b2
  .debug_loc     0x00000000      0x102 ./src/cr_startup_lpc177x_8x.o
  .debug_loc     0x00000102       0x90 ./src/main.o
- .debug_loc     0x00000192       0x20 /home/thedi/Projects/lpcxpresso/icb-test/CMSISv2p00_LPC177x_8x/Debug/libCMSISv2p00_LPC177x_8x.a(system_LPC177x_8x.o)
+ .debug_loc     0x00000192       0x20 ../../CMSISv2p00_LPC177x_8x/Debug/libCMSISv2p00_LPC177x_8x.a(system_LPC177x_8x.o)
 
 .debug_aranges  0x00000000       0xd8
  .debug_aranges
@@ -251,18 +251,18 @@ OUTPUT(rgb.axf elf32-littlearm)
  .debug_aranges
                 0x00000080       0x30 ./src/main.o
  .debug_aranges
-                0x000000b0       0x28 /home/thedi/Projects/lpcxpresso/icb-test/CMSISv2p00_LPC177x_8x/Debug/libCMSISv2p00_LPC177x_8x.a(system_LPC177x_8x.o)
+                0x000000b0       0x28 ../../CMSISv2p00_LPC177x_8x/Debug/libCMSISv2p00_LPC177x_8x.a(system_LPC177x_8x.o)
 
 .debug_ranges   0x00000000       0xa8
  .debug_ranges  0x00000000       0x70 ./src/cr_startup_lpc177x_8x.o
  .debug_ranges  0x00000070       0x20 ./src/main.o
- .debug_ranges  0x00000090       0x18 /home/thedi/Projects/lpcxpresso/icb-test/CMSISv2p00_LPC177x_8x/Debug/libCMSISv2p00_LPC177x_8x.a(system_LPC177x_8x.o)
+ .debug_ranges  0x00000090       0x18 ../../CMSISv2p00_LPC177x_8x/Debug/libCMSISv2p00_LPC177x_8x.a(system_LPC177x_8x.o)
 
 .debug_line     0x00000000      0xc05
  .debug_line    0x00000000      0x3e3 ./src/cr_startup_lpc177x_8x.o
  .debug_line    0x000003e3       0xaa ./src/crp.o
  .debug_line    0x0000048d      0x3c2 ./src/main.o
- .debug_line    0x0000084f      0x3b6 /home/thedi/Projects/lpcxpresso/icb-test/CMSISv2p00_LPC177x_8x/Debug/libCMSISv2p00_LPC177x_8x.a(system_LPC177x_8x.o)
+ .debug_line    0x0000084f      0x3b6 ../../CMSISv2p00_LPC177x_8x/Debug/libCMSISv2p00_LPC177x_8x.a(system_LPC177x_8x.o)
 
 .debug_macinfo  0x00000000    0x1bb31
  .debug_macinfo
@@ -272,7 +272,7 @@ OUTPUT(rgb.axf elf32-littlearm)
  .debug_macinfo
                 0x0000a990     0x8918 ./src/main.o
  .debug_macinfo
-                0x000132a8     0x8889 /home/thedi/Projects/lpcxpresso/icb-test/CMSISv2p00_LPC177x_8x/Debug/libCMSISv2p00_LPC177x_8x.a(system_LPC177x_8x.o)
+                0x000132a8     0x8889 ../../CMSISv2p00_LPC177x_8x/Debug/libCMSISv2p00_LPC177x_8x.a(system_LPC177x_8x.o)
 
 .debug_str      0x00000000      0x7d1
  .debug_str     0x00000000      0x25a ./src/cr_startup_lpc177x_8x.o
@@ -281,7 +281,7 @@ OUTPUT(rgb.axf elf32-littlearm)
                                  0x9f (size before relaxing)
  .debug_str     0x00000270      0x32c ./src/main.o
                                 0x43b (size before relaxing)
- .debug_str     0x0000059c      0x235 /home/thedi/Projects/lpcxpresso/icb-test/CMSISv2p00_LPC177x_8x/Debug/libCMSISv2p00_LPC177x_8x.a(system_LPC177x_8x.o)
+ .debug_str     0x0000059c      0x235 ../../CMSISv2p00_LPC177x_8x/Debug/libCMSISv2p00_LPC177x_8x.a(system_LPC177x_8x.o)
                                 0x371 (size before relaxing)
 
 .comment        0x00000000       0x70
@@ -289,7 +289,7 @@ OUTPUT(rgb.axf elf32-littlearm)
                                  0x71 (size before relaxing)
  .comment       0x00000000       0x71 ./src/crp.o
  .comment       0x00000000       0x71 ./src/main.o
- .comment       0x00000000       0x71 /home/thedi/Projects/lpcxpresso/icb-test/CMSISv2p00_LPC177x_8x/Debug/libCMSISv2p00_LPC177x_8x.a(system_LPC177x_8x.o)
+ .comment       0x00000000       0x71 ../../CMSISv2p00_LPC177x_8x/Debug/libCMSISv2p00_LPC177x_8x.a(system_LPC177x_8x.o)
  .comment       0x00000000       0x71 /opt/lpcxpresso_6.0.2_151/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/../../../../arm-none-eabi/lib/armv7-m/libcr_c.a(__weak__main.o)
 
 .ARM.attributes
@@ -301,11 +301,11 @@ OUTPUT(rgb.axf elf32-littlearm)
  .ARM.attributes
                 0x00000066       0x33 ./src/main.o
  .ARM.attributes
-                0x00000099       0x33 /home/thedi/Projects/lpcxpresso/icb-test/CMSISv2p00_LPC177x_8x/Debug/libCMSISv2p00_LPC177x_8x.a(system_LPC177x_8x.o)
+                0x00000099       0x33 ../../CMSISv2p00_LPC177x_8x/Debug/libCMSISv2p00_LPC177x_8x.a(system_LPC177x_8x.o)
  .ARM.attributes
                 0x000000cc       0x33 /opt/lpcxpresso_6.0.2_151/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/../../../../arm-none-eabi/lib/armv7-m/libcr_c.a(__weak__main.o)
 
 .debug_frame    0x00000000      0x18c
  .debug_frame   0x00000000       0xf4 ./src/cr_startup_lpc177x_8x.o
  .debug_frame   0x000000f4       0x60 ./src/main.o
- .debug_frame   0x00000154       0x38 /home/thedi/Projects/lpcxpresso/icb-test/CMSISv2p00_LPC177x_8x/Debug/libCMSISv2p00_LPC177x_8x.a(system_LPC177x_8x.o)
+ .debug_frame   0x00000154       0x38 ../../CMSISv2p00_LPC177x_8x/Debug/libCMSISv2p00_LPC177x_8x.a(system_LPC177x_8x.o)
