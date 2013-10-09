@@ -41,7 +41,7 @@ This program has been test on LPCXpresso 1700.
 *****************************************************************************/
 int main (void)
 {
-	const char* welcomeMsg = "UART1 Online:\r\n";
+	const char* welcomeMsg = "UART1 Online\r\n";
 	//SystemInit();	//Called by startup code
 
 	UARTInit(1, 9600);	/* baud rate setting */
